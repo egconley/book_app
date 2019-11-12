@@ -1,0 +1,69 @@
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html{
+  background-color: black;
+}
+h1{
+  color: #F2F2F2;
+  font-size: 35px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+div{
+    display: flex;
+    flex-direction: column;
+  }
+.search{
+  border: 1px solid black;
+  background-color: #404040;
+  color: #F2F2F2;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+body{
+  width: 480px;
+  height: 767px;
+  margin: 0 auto;
+  background-color: #A6A6A6;
+}
+header{
+  width: 480px;
+  height: 75px;
+  border: 1px solid black;
+  border-bottom: 0;
+  margin: 0 auto;
+  background: black;
+}
+form{
+width: 300px;
+height: 50px;
+
+}
+
+input{
+  margin: 20px;
+  
+}
+.searchBox{
+width: 400px;
+height: 75px;
+} 
+fieldset{
+  margin: 20px;
+  width: 400px;
+  background-color: #D9D9D9;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+button {
+  background-color: black;
+  color: #F2F2F2;
+  width: 400px;
+  margin: 20px;
+  height: 80px ;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+}
