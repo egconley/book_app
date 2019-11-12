@@ -25,13 +25,14 @@ function Book(info) {
   // this.image = volumeInfo.imageLinks.thumbnail;
   this.image = `https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
   // link grabbed from items.volumeInfo.imageLinks.thumbnail property.
+  console.log(this);
 }
 
 function searchHandler(request, response) {
   let url = 'https://www.googleapis.com/books/v1/volumes?q=';
 
-  console.log(request.body);
-  console.log(request.body.search);
+  // console.log(request.body);
+  // console.log(request.body.search);
 
   if (request.body.search[1] === 'title') { url += `+intitle:${request.body.search[0]}`; }
   if (request.body.search[1] === 'author') { url += `+inauthor:${request.body.search[0]}`; }
