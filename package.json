@@ -1,7 +1,7 @@
 {
   "name": "book_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Author**: Kateryna Shydlovska, Ellen Conley **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,5 +22,7 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "superagent": "^5.1.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
