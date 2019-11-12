@@ -47,7 +47,10 @@ function searchHandler(request, response) {
 
   superagent.get(url)
     .then(apiResponse => apiResponse.body.items.map(bookResult => new Book(bookResult)))
-    .then(bookArr => response.render('pages/searches/show', {arrItems: bookArr}));
+    .then(bookArr => response.render('pages/searches/show', {arrItems: bookArr}))
+    .catch(() => {
+      response.render('pages/error');
+    })
   // how will we handle errors?
 }
 
