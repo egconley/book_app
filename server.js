@@ -16,6 +16,13 @@ app.get('/', (request, response) => {
 
 app.post('/searches', searchHandler);
 
+app.get('/searches', (request, response) => {
+  response.render('searches', { arrItems: bookArr });
+})
+
+
+let bookArr = [];
+
 function Book(info) {
   // const placeholderImage = 'https://i.imgur.com/J5LVHEL.jpg';
   let id = info.id;
@@ -25,7 +32,8 @@ function Book(info) {
   // this.image = volumeInfo.imageLinks.thumbnail;
   this.image = `https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
   // link grabbed from items.volumeInfo.imageLinks.thumbnail property.
-  console.log(this);
+  bookArr.push(this);
+  // console.log(this);
 }
 
 function searchHandler(request, response) {
