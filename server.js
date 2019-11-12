@@ -14,15 +14,16 @@ app.get('/', (request, response) => {
   response.render('pages/index');
 })
 
-<<<<<<< HEAD
-app.post('/serches', searchHendler);
-
-function Book(items) {
-=======
 app.post('/searches', searchHandler);
 
+app.get('/searches', (request, response) => {
+  response.render('searches', { arrItems: bookArr });
+})
+
+
+let bookArr = [];
+
 function Book(info) {
->>>>>>> ab4ce572ffd20ee36a824b97ad7c18800295d14d
   // const placeholderImage = 'https://i.imgur.com/J5LVHEL.jpg';
   let id = info.id;
   this.title = info.volumeInfo.title || 'No title available';
@@ -31,35 +32,15 @@ function Book(info) {
   // this.image = volumeInfo.imageLinks.thumbnail;
   this.image = `https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
   // link grabbed from items.volumeInfo.imageLinks.thumbnail property.
-  console.log(this);
+  bookArr.push(this);
+  // console.log(this);
 }
 
-<<<<<<< HEAD
-function searchHendler(request, response) {
-=======
 function searchHandler(request, response) {
->>>>>>> ab4ce572ffd20ee36a824b97ad7c18800295d14d
   let url = 'https://www.googleapis.com/books/v1/volumes?q=';
 
-<<<<<<< HEAD
-  console.log(request.body);
-  console.log(request.body.search);
-<<<<<<< HEAD
-
-  if (request.body.search[1] === 'title') { url += `+intitle:${request.body.search[0]}`; }
-  if (request.body.search[1] === 'author') { url += `+inauthor:${request.body.search[0]}`; }
-
-  superagent.get(url)
-    .then(apiResponse => apiResponse.body.items.map(bookResult => new Book(bookResult.volumeInfo)))
-    .then(results => response.render('pages/searches/show', { searchResults: results }));
-}
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
-=======
->>>>>>> ab4ce572ffd20ee36a824b97ad7c18800295d14d
-=======
   // console.log(request.body);
   // console.log(request.body.search);
->>>>>>> 4d87db9a27167551fa1c2c857567a880a3c170fe
 
   if (request.body.search[1] === 'title') { url += `+intitle:${request.body.search[0]}`; }
   if (request.body.search[1] === 'author') { url += `+inauthor:${request.body.search[0]}`; }
