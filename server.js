@@ -16,10 +16,10 @@ app.get('/', (request, response) => {
 
 app.post('/searches', searchHandler);
 
-app.get('/searches', (request, response) => {
-  response.render('searches', { arrItems: bookArr });
-})
-
+// app.get('/searches', (request, response) => {
+//   console.log('!!!!!', bookArr);
+//   // response.render('searches', { arrItems: bookArr });
+// })
 
 let bookArr = [];
 
@@ -33,7 +33,7 @@ function Book(info) {
   this.image = `https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
   // link grabbed from items.volumeInfo.imageLinks.thumbnail property.
   bookArr.push(this);
-  // console.log(this);
+  console.log(bookArr);
 }
 
 function searchHandler(request, response) {
@@ -47,7 +47,7 @@ function searchHandler(request, response) {
 
   superagent.get(url)
     .then(apiResponse => apiResponse.body.items.map(bookResult => new Book(bookResult)))
-    .then(results => response.render('pages/searches/show', {searchResults: results}));
+    .then(bookArr => response.render('pages/searches/show', {arrItems: bookArr}));
   // how will we handle errors?
 }
 
