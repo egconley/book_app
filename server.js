@@ -13,6 +13,16 @@ app.get('/', (request, response) => {
   response.render('index');
 })
 
+function Book(items) {
+  // const placeholderImage = 'https://i.imgur.com/J5LVHEL.jpg';
+  this.id = items.id;
+  this.title = items.volumeInfo.title || 'No title available';
+  this.author = items.volumeInfo.info.authors || 'No author available';
+  this.description = items.volumeInfo.description || 'No description available';
+  // this.image = items.volumeInfo.imageLinks.thumbnail;
+  this.image = `https://books.google.com/books/content?id=${items.id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
+}
+
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 ///
