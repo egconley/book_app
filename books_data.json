@@ -1,0 +1,891 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 2101,
+  "items": [
+      {
+          "kind": "books#volume",
+          "id": "xAsByXJNjCMC",
+          "etag": "eHmeZkEuKmo",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/xAsByXJNjCMC",
+          "volumeInfo": {
+              "title": "Turtle in Paradise",
+              "authors": [
+                  "Jennifer L. Holm"
+              ],
+              "publisher": "Random House Books for Young Readers",
+              "publishedDate": "2010-05-11",
+              "description": "In Jennifer L. Holm's New York Times bestselling, Newbery Honor winning middle grade historical fiction novel, life isn't like the movies. But then again, 11-year-old Turtle is no Shirley Temple She's smart and tough and has seen enough of the world not to expect a Hollywood ending. After all, it's 1935 and jobs and money and sometimes even dreams are scarce. So when Turtle's mama gets a job housekeeping for a lady who doesn't like kids, Turtle says goodbye without a tear and heads off to Key West, Florida to live with relatives she's never met. Florida's like nothing Turtle's ever seen before though. It's hot and strange, full of rag tag boy cousins, family secrets, scams, and even buried pirate treasure! Before she knows what's happened, Turtle finds herself coming out of the shell she's spent her life building, and as she does, her world opens up in the most unexpected ways. Filled with adventure, humor and heart, Turtle in Paradise is an instant classic both boys and girls with love. Includes an Author's Note with photographs and further background on the Great Depression, as well as additional resources and websites. Starred Review, Kirkus Reviews: \"Sweet, funny and superb.\" Starred Review, Booklist: \"Just the right mixture of knowingness and hope . . . a hilarious blend of family drama seasoned with a dollop of adventure.\"",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0375893164"
+                  },
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780375893162"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": true
+              },
+              "pageCount": 208,
+              "printType": "BOOK",
+              "categories": [
+                  "Juvenile Fiction"
+              ],
+              "averageRating": 4.5,
+              "ratingsCount": 14,
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": true,
+              "contentVersion": "2.14.11.0.preview.3",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=xAsByXJNjCMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=xAsByXJNjCMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=xAsByXJNjCMC&printsec=frontcover&dq=turtle&hl=&cd=1&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=xAsByXJNjCMC&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=xAsByXJNjCMC"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 7.99,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 7.99,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=xAsByXJNjCMC&rdid=book-xAsByXJNjCMC&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 7990000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 7990000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Turtle_in_Paradise-sample-epub.acsm?id=xAsByXJNjCMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Turtle_in_Paradise-sample-pdf.acsm?id=xAsByXJNjCMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=xAsByXJNjCMC&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "In Jennifer L. Holm&#39;s New York Times bestselling, Newbery Honor winning middle grade historical fiction novel, life isn&#39;t like the movies."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "AJFJDwAAQBAJ",
+          "etag": "rZZ+raQIK0Q",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/AJFJDwAAQBAJ",
+          "volumeInfo": {
+              "title": "Dreaming in Turtle",
+              "subtitle": "A Journey Through the Passion, Profit, and Peril of Our Most Coveted Prehistoric Creatures",
+              "authors": [
+                  "Peter Laufer"
+              ],
+              "publisher": "St. Martin's Press",
+              "publishedDate": "2018-11-20",
+              "description": "A fascinating exploration into the world of turtles across the globe; Laufer charts the lore, love, and peril to a beloved species. Dreaming in Turtle is a compelling story of a stalwart animal prized from prehistory through to today—an animal threatened by human greed, pragmatism, and rationalization. It stars turtles and shady and heroic human characters both, in settings ranging from luxury redoubts to degraded habitats, during a time when the confluence of easy global trade, limited supply, and inexhaustible demand has accelerated the stress on species. The growth of the middle class in high-population regions like China, where the turtle is particularly valued, feeds this perfect storm into which the turtle finds itself lashed. This is a tale not just of endangered turtles but also one of overall human failings, frailties, and vulnerabilities—all punctuated by optimistic hope for change fueled by dedicated turtle champions.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9781250128102"
+                  },
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "1250128102"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": false
+              },
+              "pageCount": 336,
+              "printType": "BOOK",
+              "categories": [
+                  "Nature"
+              ],
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "1.2.1.0.preview.2",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=AJFJDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=AJFJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=AJFJDwAAQBAJ&printsec=frontcover&dq=turtle&hl=&cd=2&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=AJFJDwAAQBAJ&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=AJFJDwAAQBAJ"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 14.99,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=AJFJDwAAQBAJ&rdid=book-AJFJDwAAQBAJ&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 14990000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 14990000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Dreaming_in_Turtle-sample-epub.acsm?id=AJFJDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": false
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=AJFJDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "This is a tale not just of endangered turtles but also one of overall human failings, frailties, and vulnerabilities—all punctuated by optimistic hope for change fueled by dedicated turtle champions."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "fUvjDQAAQBAJ",
+          "etag": "N3zZsExAE/w",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/fUvjDQAAQBAJ",
+          "volumeInfo": {
+              "title": "Old Turtle",
+              "authors": [
+                  "Douglas Wood"
+              ],
+              "publisher": "Scholastic Inc.",
+              "publishedDate": "2017-03-28",
+              "description": "Who is God?Is He a wind that is never still?Is He a rock that never moves?Is He high above or here among us?Venerable Old Turtle answers quietly: God is all of these things.Old Turtle first burst upon the publishing scene in 1992, and it was instantly recognized as a classic fable about ecology, peace, and the interconnectedness of all beings. Simple yet profound, it has since brought hope and inspiration to children and adults around the world.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9781338193756"
+                  },
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "1338193759"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": true
+              },
+              "pageCount": 56,
+              "printType": "BOOK",
+              "categories": [
+                  "Juvenile Fiction"
+              ],
+              "averageRating": 3.5,
+              "ratingsCount": 8,
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": true,
+              "contentVersion": "1.2.2.0.preview.3",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=fUvjDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=fUvjDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=fUvjDQAAQBAJ&printsec=frontcover&dq=turtle&hl=&cd=3&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=fUvjDQAAQBAJ&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=fUvjDQAAQBAJ"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 10.99,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 10.99,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=fUvjDQAAQBAJ&rdid=book-fUvjDQAAQBAJ&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 10990000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 10990000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Old_Turtle-sample-epub.acsm?id=fUvjDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Old_Turtle-sample-pdf.acsm?id=fUvjDQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=fUvjDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "Who is God?Is He a wind that is never still?Is He a rock that never moves?Is He high above or here among us?Venerable Old Turtle answers quietly: God is all of these things.Old Turtle first burst upon the publishing scene in 1992, and it ..."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "3geYp44hJVcC",
+          "etag": "zeb7WgXD1H0",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/3geYp44hJVcC",
+          "volumeInfo": {
+              "title": "Turtle Geometry",
+              "subtitle": "The Computer as a Medium for Exploring Mathematics",
+              "authors": [
+                  "Harold Abelson",
+                  "Andrea A. DiSessa"
+              ],
+              "publisher": "MIT Press",
+              "publishedDate": "1986",
+              "description": "Turtle Geometry presents an innovative program of mathematical discovery thatdemonstrates how the effective use of personal computers can profoundly change the nature of astudent's contact with mathematics. Using this book and a few simple computer programs, students canexplore the properties of space by following an imaginary turtle across the screen.The concept ofturtle geometry grew out of the Logo Group at MIT. Directed by Seymour Papert, author of Mindstorms,this group has done extensive work with preschool children, high school students and universityundergraduates. Harold Abelson is an associate professor in the Department of Electrical Engineeringand Computer Science at MIT. Andrea diSessa is an associate professor in the Graduate School ofEducation, University of California, Berkeley.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0262510375"
+                  },
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780262510370"
+                  }
+              ],
+              "readingModes": {
+                  "text": false,
+                  "image": true
+              },
+              "pageCount": 477,
+              "printType": "BOOK",
+              "categories": [
+                  "Computers"
+              ],
+              "averageRating": 5,
+              "ratingsCount": 1,
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "0.0.3.0.preview.1",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=3geYp44hJVcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=3geYp44hJVcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=3geYp44hJVcC&printsec=frontcover&dq=turtle&hl=&cd=4&source=gbs_api",
+              "infoLink": "http://books.google.com/books?id=3geYp44hJVcC&dq=turtle&hl=&source=gbs_api",
+              "canonicalVolumeLink": "https://books.google.com/books/about/Turtle_Geometry.html?hl=&id=3geYp44hJVcC"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "NOT_FOR_SALE",
+              "isEbook": false
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": false
+              },
+              "pdf": {
+                  "isAvailable": false
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=3geYp44hJVcC&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "Using this book and a few simple computer programs, students canexplore the properties of space by following an imaginary turtle across the screen.The concept ofturtle geometry grew out of the Logo Group at MIT."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "9Is_n5G878UC",
+          "etag": "ggiSrMwX4Ec",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/9Is_n5G878UC",
+          "volumeInfo": {
+              "title": "All about the turtle",
+              "authors": [
+                  "William White"
+              ],
+              "publisher": "Sterling Pub Co Inc",
+              "publishedDate": "1992-05",
+              "description": "Discusses turtles in ancient times and their physical characteristics, habits, and life cycle today.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0806982764"
+                  },
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780806982762"
+                  }
+              ],
+              "readingModes": {
+                  "text": false,
+                  "image": false
+              },
+              "pageCount": 72,
+              "printType": "BOOK",
+              "categories": [
+                  "Juvenile Nonfiction"
+              ],
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "0.0.1.0.preview.0",
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=9Is_n5G878UC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=9Is_n5G878UC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=9Is_n5G878UC&q=turtle&dq=turtle&hl=&cd=5&source=gbs_api",
+              "infoLink": "http://books.google.com/books?id=9Is_n5G878UC&dq=turtle&hl=&source=gbs_api",
+              "canonicalVolumeLink": "https://books.google.com/books/about/All_about_the_turtle.html?hl=&id=9Is_n5G878UC"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "NOT_FOR_SALE",
+              "isEbook": false
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "NO_PAGES",
+              "embeddable": false,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": false
+              },
+              "pdf": {
+                  "isAvailable": false
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=9Is_n5G878UC&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "NONE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "Discusses turtles in ancient times and their physical characteristics, habits, and life cycle today."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "SLHxAwAAQBAJ",
+          "etag": "MkQ1wkp4qak",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/SLHxAwAAQBAJ",
+          "volumeInfo": {
+              "title": "Yertle the Turtle and Other Stories",
+              "authors": [
+                  "Seuss"
+              ],
+              "publisher": "RH Childrens Books",
+              "publishedDate": "2013-10-22",
+              "description": "Dr. Seuss presents three modern fables in the rhyming favorite Yertle the Turtle and Other Stories. The collection features tales about greed (“Yertle the Turtle”), vanity (“Gertrude McFuzz”), and pride (“The Big Brag”). In no other book does a small burp have such political importance! Yet again, Dr. Seuss proves that he and classic picture books go hand in hand. From the Hardcover edition.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780385373630"
+                  },
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0385373635"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": true
+              },
+              "pageCount": 96,
+              "printType": "BOOK",
+              "categories": [
+                  "Juvenile Fiction"
+              ],
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": true,
+              "contentVersion": "1.2.2.0.preview.3",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=SLHxAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=SLHxAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=SLHxAwAAQBAJ&printsec=frontcover&dq=turtle&hl=&cd=6&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=SLHxAwAAQBAJ&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=SLHxAwAAQBAJ"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 9.99,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 9.99,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=SLHxAwAAQBAJ&rdid=book-SLHxAwAAQBAJ&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 9990000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 9990000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Yertle_the_Turtle_and_Other_Stories-sample-epub.acsm?id=SLHxAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Yertle_the_Turtle_and_Other_Stories-sample-pdf.acsm?id=SLHxAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=SLHxAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "Dr. Seuss presents three modern fables in the rhyming favorite Yertle the Turtle and Other Stories. The collection features tales about greed (“Yertle the Turtle”), vanity (“Gertrude McFuzz”), and pride (“The Big Brag”)."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "tatZTyKeL2AC",
+          "etag": "6tJ+cxxEcO0",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/tatZTyKeL2AC",
+          "volumeInfo": {
+              "title": "Way of the Turtle: The Secret Methods that Turned Ordinary People into Legendary Traders",
+              "subtitle": "The Secret Methods that Turned Ordinary People into Legendary Traders",
+              "authors": [
+                  "Curtis Faith"
+              ],
+              "publisher": "McGraw Hill Professional",
+              "publishedDate": "2007-03-30",
+              "description": "“We're going to raise traders just like they raise turtles in Singapore.” So trading guru Richard Dennis reportedly said to his long-time friend William Eckhardt nearly 25 years ago. What started as a bet about whether great traders were born or made became a legendary trading experiment that, until now, has never been told in its entirety. Way of the Turtle reveals, for the first time, the reasons for the success of the secretive trading system used by the group known as the “Turtles.” Top-earning Turtle Curtis Faith lays bare the entire experiment, explaining how it was possible for Dennis and Eckhardt to recruit 23 ordinary people from all walks of life and train them to be extraordinary traders in just two weeks. Only nineteen years old at the time-the youngest Turtle by far-Faith traded the largest account, making more than $30 million in just over four years. He takes you behind the scenes of the Turtle selection process and behind closed doors where the Turtles learned the lucrative trading strategies that enabled them to earn an average return of over 80 percent per year and profits of more than $100 million. You'll discover How the Turtles made money-the principles that guided their trading and the step-by-step methods they followed Why, even though they used the same approach, some Turtles were more successful than others How to look beyond the rules as the Turtles implemented them to find core strategies that work for any tradable market How to apply the Turtle Way to your own trades-and in your own life Ways to diversify your trading and limit your exposure to risk Offering his unique perspective on the experience, Faith explains why the Turtle Way works in modern markets, and shares hard-earned wisdom on taking risks, choosing your own path, and learning from your mistakes.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0071509461"
+                  },
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780071509466"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": true
+              },
+              "pageCount": 240,
+              "printType": "BOOK",
+              "categories": [
+                  "Business & Economics"
+              ],
+              "averageRating": 3.5,
+              "ratingsCount": 8,
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": true,
+              "contentVersion": "1.13.7.0.preview.3",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=tatZTyKeL2AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=tatZTyKeL2AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=tatZTyKeL2AC&printsec=frontcover&dq=turtle&hl=&cd=7&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=tatZTyKeL2AC&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=tatZTyKeL2AC"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 34,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 18.7,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=tatZTyKeL2AC&rdid=book-tatZTyKeL2AC&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 34000000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 18700000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Way_of_the_Turtle_The_Secret_Methods_tha-sample-epub.acsm?id=tatZTyKeL2AC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Way_of_the_Turtle_The_Secret_Methods_tha-sample-pdf.acsm?id=tatZTyKeL2AC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=tatZTyKeL2AC&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "You&#39;ll discover How the Turtles made money-the principles that guided their trading and the step-by-step methods they followed Why, even though they used the same approach, some Turtles were more successful than others How to look beyond ..."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "xilff6LAWAcC",
+          "etag": "SbB6m/Y/C3g",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/xilff6LAWAcC",
+          "volumeInfo": {
+              "title": "Turtle Island",
+              "authors": [
+                  "Gary Snyder"
+              ],
+              "publisher": "New Directions Publishing",
+              "publishedDate": "1974",
+              "description": "These Pulitzer Prize-winning poems and essays by the author of No Nature range from the lucid, lyrical, and mystical to the political. All, however, share a common vision: a rediscovery of North America and the ways by which we might become true natives of the land for the first time.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0811205460"
+                  },
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780811205467"
+                  }
+              ],
+              "readingModes": {
+                  "text": true,
+                  "image": true
+              },
+              "pageCount": 114,
+              "printType": "BOOK",
+              "categories": [
+                  "Poetry"
+              ],
+              "averageRating": 5,
+              "ratingsCount": 1,
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": true,
+              "contentVersion": "1.1.3.0.preview.3",
+              "panelizationSummary": {
+                  "containsEpubBubbles": false,
+                  "containsImageBubbles": false
+              },
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=xilff6LAWAcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=xilff6LAWAcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=xilff6LAWAcC&printsec=frontcover&dq=turtle&hl=&cd=8&source=gbs_api",
+              "infoLink": "https://play.google.com/store/books/details?id=xilff6LAWAcC&source=gbs_api",
+              "canonicalVolumeLink": "https://play.google.com/store/books/details?id=xilff6LAWAcC"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "FOR_SALE",
+              "isEbook": true,
+              "listPrice": {
+                  "amount": 12.95,
+                  "currencyCode": "USD"
+              },
+              "retailPrice": {
+                  "amount": 9.99,
+                  "currencyCode": "USD"
+              },
+              "buyLink": "https://play.google.com/store/books/details?id=xilff6LAWAcC&rdid=book-xilff6LAWAcC&rdot=1&source=gbs_api",
+              "offers": [
+                  {
+                      "finskyOfferType": 1,
+                      "listPrice": {
+                          "amountInMicros": 12950000,
+                          "currencyCode": "USD"
+                      },
+                      "retailPrice": {
+                          "amountInMicros": 9990000,
+                          "currencyCode": "USD"
+                      },
+                      "giftable": true
+                  }
+              ]
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Turtle_Island-sample-epub.acsm?id=xilff6LAWAcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "pdf": {
+                  "isAvailable": true,
+                  "acsTokenLink": "http://books.google.com/books/download/Turtle_Island-sample-pdf.acsm?id=xilff6LAWAcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=xilff6LAWAcC&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "These Pulitzer Prize-winning poems and essays by the author of No Nature range from the lucid, lyrical, and mystical to the political."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "DM8c41JLyVUC",
+          "etag": "OGz2/qUV9a4",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/DM8c41JLyVUC",
+          "volumeInfo": {
+              "title": "Turtle",
+              "subtitle": "Your Happy Healthy Pet",
+              "authors": [
+                  "Lenny Flank, Jr."
+              ],
+              "publisher": "*Howell Book House",
+              "publishedDate": "2007-03-31",
+              "description": "The authoritative information and advice you need, illustrated throughout with full-color photographs--now revised and redesigned to be even more reader-friendly! With their interesting shells and slow, deliberate demeanors, turtles are intriguing creatures. The more you know about turtles, the more fascinated you'll be as you watch your pet enjoy life in the slow lane. With colorful photos, charts, and tables, this guide covers the basics, including: * Choosing your turtle--terrestrial or aquatic * Setting up a tank with the right environment * Essential equipment and supplies * Maintaining the proper temperature, lighting, and humidity * Feeding and caring for your turtle",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780470127599"
+                  },
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0470127597"
+                  }
+              ],
+              "readingModes": {
+                  "text": false,
+                  "image": false
+              },
+              "pageCount": 128,
+              "printType": "BOOK",
+              "categories": [
+                  "Pets"
+              ],
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "preview-1.0.0",
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=DM8c41JLyVUC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=DM8c41JLyVUC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=DM8c41JLyVUC&dq=turtle&hl=&cd=9&source=gbs_api",
+              "infoLink": "http://books.google.com/books?id=DM8c41JLyVUC&dq=turtle&hl=&source=gbs_api",
+              "canonicalVolumeLink": "https://books.google.com/books/about/Turtle.html?hl=&id=DM8c41JLyVUC"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "NOT_FOR_SALE",
+              "isEbook": false
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "NO_PAGES",
+              "embeddable": false,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": false
+              },
+              "pdf": {
+                  "isAvailable": true
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=DM8c41JLyVUC&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "NONE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "With colorful photos, charts, and tables, this guide covers the basics, including: Choosing your turtle—terrestrial or aquatic Setting up a tank with the right environment Essential equipment and supplies Maintaining the proper ..."
+          }
+      },
+      {
+          "kind": "books#volume",
+          "id": "dpsJrFxVIvUC",
+          "etag": "AdvRnB73BBA",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/dpsJrFxVIvUC",
+          "volumeInfo": {
+              "title": "Sea Turtles",
+              "subtitle": "A Complete Guide to Their Biology, Behavior, and Conservation",
+              "authors": [
+                  "James R. Spotila"
+              ],
+              "publisher": "JHU Press",
+              "publishedDate": "2004-10-26",
+              "description": "Presents a vivid description of the natural history and life cycle of the seven species of sea tutles, including diets and mating habits, the environmental dangers that threaten their survival, and current conservation efforts.",
+              "industryIdentifiers": [
+                  {
+                      "type": "ISBN_13",
+                      "identifier": "9780801880070"
+                  },
+                  {
+                      "type": "ISBN_10",
+                      "identifier": "0801880076"
+                  }
+              ],
+              "readingModes": {
+                  "text": false,
+                  "image": true
+              },
+              "pageCount": 227,
+              "printType": "BOOK",
+              "categories": [
+                  "Nature"
+              ],
+              "averageRating": 3.5,
+              "ratingsCount": 2,
+              "maturityRating": "NOT_MATURE",
+              "allowAnonLogging": false,
+              "contentVersion": "preview-1.0.0",
+              "imageLinks": {
+                  "smallThumbnail": "http://books.google.com/books/content?id=dpsJrFxVIvUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=dpsJrFxVIvUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+              },
+              "language": "en",
+              "previewLink": "http://books.google.com/books?id=dpsJrFxVIvUC&printsec=frontcover&dq=turtle&hl=&cd=10&source=gbs_api",
+              "infoLink": "http://books.google.com/books?id=dpsJrFxVIvUC&dq=turtle&hl=&source=gbs_api",
+              "canonicalVolumeLink": "https://books.google.com/books/about/Sea_Turtles.html?hl=&id=dpsJrFxVIvUC"
+          },
+          "saleInfo": {
+              "country": "US",
+              "saleability": "NOT_FOR_SALE",
+              "isEbook": false
+          },
+          "accessInfo": {
+              "country": "US",
+              "viewability": "PARTIAL",
+              "embeddable": true,
+              "publicDomain": false,
+              "textToSpeechPermission": "ALLOWED",
+              "epub": {
+                  "isAvailable": false
+              },
+              "pdf": {
+                  "isAvailable": false
+              },
+              "webReaderLink": "http://play.google.com/books/reader?id=dpsJrFxVIvUC&hl=&printsec=frontcover&source=gbs_api",
+              "accessViewStatus": "SAMPLE",
+              "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+              "textSnippet": "Presents a vivid description of the natural history and life cycle of the seven species of sea tutles, including diets and mating habits, the environmental dangers that threaten their survival, and current conservation efforts."
+          }
+      }
+  ]
+}
