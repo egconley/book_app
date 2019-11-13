@@ -1,11 +1,12 @@
 <section>
   <ul>
     <li>
-      <h3>Book: <%= book.title %></h3>
-        <p>Desc: <%= book.description %></p>
-      <p>Author: <%= book.author %></p>
-      <p>isbn: <%= book.isbn %></p>
-      <p>bookshelf: <%= book.bookshelf %></p>
+      <img src="<%=book.image_url%>" alt="">
+      <h3><%= book.title %></h3>
+      <p><%= book.author %></p>
+      <p><%= book.description %></p>
+      <p>ISBN: <%= book.isbn %></p>
+      <p>Bookshelf: <%= book.bookshelf %></p>
     </li>
   </ul>
 </section>
