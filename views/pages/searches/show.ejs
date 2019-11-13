@@ -9,6 +9,7 @@
   <ul>
     <li><% console.log(arrItems) %></li>
     <% arrItems.forEach(item => { %>
+    <img src="<%=item.image%>"/>
     <li><%= item.title %></li>
     <li><%= item.author %></li>
     <li><%= item.description %></li>
