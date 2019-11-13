@@ -23,7 +23,7 @@ function getBooks(req, res) {
   let SQL = 'SELECT * FROM books;';
 
   return client.query(SQL)
-    .then(results => res.render('pages/index', { results: results.rows[0] }))
+    .then(results => res.render('pages/index', { results: results.rows }))
     .catch(() => {
       res.render('pages/error');
     })
