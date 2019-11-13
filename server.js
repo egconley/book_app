@@ -1,5 +1,6 @@
 'use strict';
 
+require('dotenv').config();
 const express = require('express');
 const superagent = require('superagent');
 const pg = require('pg');
@@ -9,17 +10,31 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 
+const client = new pg.Client(process.env.DATABASE_URL);
+client.connect();
+client.on('error', err => console.error(err));
+
 app.set('view engine', 'ejs');
 
-app.get('/', (request, response) => {
-  response.render('pages/index');
-})
+app.get('/', getBooks);
+
+
+function getBooks(req, res) {
+  let SQL = 'SELECT * FROM books;';
+
+  return client.query(SQL)
+    .then(results => res.render('pages/index', { results: results.rows[0] }))
+    .catch(() => {
+      res.render('pages/error');
+    })
+  // res.render('pages/index');
+}
 
 app.post('/searches', searchHandler);
 
-// app.get('/searches', (request, response) => {
+// app.get('/searches', (request, res) => {
 //   console.log('!!!!!', bookArr);
-//   // response.render('searches', { arrItems: bookArr });
+//   // res.render('searches', { arrItems: bookArr });
 // })
 
 let bookArr = [];
@@ -37,21 +52,22 @@ function Book(info) {
   console.log(bookArr);
 }
 
-function searchHandler(request, response) {
+function searchHandler(req, res) {
   let url = 'https://www.googleapis.com/books/v1/volumes?q=';
 
-  // console.log(request.body);
-  // console.log(request.body.search);
+  // console.log(req.body);
+  // console.log(req.body.search);
 
-  if (request.body.search[1] === 'title') { url += `+intitle:${request.body.search[0]}`; }
-  if (request.body.search[1] === 'author') { url += `+inauthor:${request.body.search[0]}`; }
+  if (req.body.search[1] === 'title') { url += `+intitle:${req.body.search[0]}`; }
+  if (req.body.search[1] === 'author') { url += `+inauthor:${req.body.search[0]}`; }
 
   superagent.get(url)
     .then(apiResponse => apiResponse.body.items.map(bookResult => new Book(bookResult)))
-    .then(bookArr => response.render('pages/searches/show', {arrItems: bookArr}))
+    .then(bookArr => res.render('pages/searches/show', { arrItems: bookArr }))
     .catch(() => {
-      response.render('pages/error');
+      res.render('pages/error');
     })
+
   // how will we handle errors?
 }
 
