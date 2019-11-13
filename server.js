@@ -36,7 +36,7 @@ function getOneBook(req, res) {
 
   return client.query(SQL, values)
     .then(result => {
-      return res.render('pages/books/detail', { book: result.rows[0] });
+      return res.render('pages/books/show', { book: result.rows[0] });
     })
     .catch(err => console.error(err));
 }
