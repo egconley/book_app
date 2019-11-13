@@ -21,7 +21,6 @@ app.get('/', getBooks);
 
 function getBooks(req, res) {
   let SQL = 'SELECT * FROM books;';
-
   return client.query(SQL)
     .then(results => res.render('pages/index', { results: results.rows }))
     .catch(() => {

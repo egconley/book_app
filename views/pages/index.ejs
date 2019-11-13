@@ -12,10 +12,10 @@
   <header>
     <h1>Best Books!</h1>
   </header>
+  <h2>My Books (<%=results.length %>)</h2>
   <ul>
     <% results.forEach(book => { %>
     <li>
-      <h2>My Books (<%= book.id %>)</h2>
       <h3><%= book.title %></h3>
       <p>by <%= book.author %></p>
       <a href="/books/<%= book.id %>">View Details</a>
