@@ -15,34 +15,14 @@
   <ul>
     <% results.forEach(book => { %>
     <li>
-      <h2>Task Name: <%= book.title %></h2>
-      <p>Author: <%= book.author %></p>
-      <a href="/books/<%= book.id %>">View Task Details</a>
+      <h2>My Books (<%= book.id %>)</h2>
+      <h3><%= book.title %></h3>
+      <p>by <%= book.author %></p>
+      <a href="/books/<%= book.id %>">View Details</a>
     </li>
     <% }) %>
-  <div>
-<div class="search"><h2>Search by Title or Author</h2></div>
-  <form  action="/searches" method="post">
-    <input class ="searchBox" type="text" name="search" placeholder="Enter a title or author" required>
+  </ul>
 
-    <fieldset>
-      <label for="title">
-        <span>Title</span>
-        <input type="radio" name="search" value="title" required>
-      </label>
-    </fieldset>
-
-    <fieldset>
-      <label for="author">
-        <span>Author</span>
-        <input type="radio" name="search" value="author" required>
-      </label>
-    </fieldset>
-
-    <button type="submit">Search the Google Books API</button>
-  </form>
-  </div>
-  
   <footer></footer>
 </body>
 
