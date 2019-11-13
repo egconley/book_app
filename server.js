@@ -17,6 +17,7 @@ client.on('error', err => console.error(err));
 app.set('view engine', 'ejs');
 
 app.get('/', getBooks);
+app.get('/books/:book_id', getOneBook);
 
 
 function getBooks(req, res) {
@@ -29,6 +30,19 @@ function getBooks(req, res) {
     })
   // res.render('pages/index');
 }
+
+function getOneBook(req, res) {
+  let SQL = 'SELECT * FROM books WHERE id=$1;';
+  let values = [req.params.book_id];
+
+  return client.query(SQL, values)
+    .then(result => {
+      return res.render('pages/books/detail', { book: result.rows[0] });
+    })
+    .catch(err => console.error(err));
+}
+
+
 
 app.post('/searches', searchHandler);
 
