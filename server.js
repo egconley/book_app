@@ -58,19 +58,21 @@ function getOneBook(req, res) {
 // }
 
 function addBook(request, response) {
+
   console.log('this is the one ', request.body);
-  let { title, author, isbn, image_url, description, bookshelf } = request.body;
+
+  let { title, author, etag, image_url, description, bookshelf } = request.body;
 
   // save book to database
-  let sql = 'INSERT INTO books (title, author, isbn, image_url, description, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);';
+  let sql = 'INSERT INTO books (title, author, etag, image_url, description, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);';
 
-  let safeValues = [title, author, isbn, image_url, description, bookshelf];
+  let safeValues = [title, author, etag, image_url, description, bookshelf];
 
   // select that book back from the DB with the id
   client.query(sql, safeValues)
     .then(() => {
-      sql = 'SELECT * FROM books WHERE isbn = $1;'
-      safeValues = [request.body.isbn];
+      sql = 'SELECT * FROM books WHERE etag = $1;'
+      safeValues = [request.body.etag]; 
 
       client.query(sql, safeValues)
         .then((result) => {
@@ -92,6 +94,7 @@ function Book(info) {
   this.title = info.volumeInfo.title || 'No title available';
   this.author = info.volumeInfo.authors || 'No author available';
   this.description = info.volumeInfo.description || 'No description available';
+  this.etag = info.etag;
   // this.image = volumeInfo.imageLinks.thumbnail;
   this.image = `https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
   // link grabbed from items.volumeInfo.imageLinks.thumbnail property.
