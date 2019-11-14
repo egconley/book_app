@@ -64,6 +64,7 @@ function Book(info) {
 }
 
 function newSearch(req, res) {
+  // renders the search form 'pages/searches/new'
   res.render('pages/searches/new');
 }
 
