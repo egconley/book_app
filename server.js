@@ -21,6 +21,7 @@ app.get('/books/:book_id', getOneBook);
 app.post('/books', addBook);
 app.post('/searches', searchHandler);
 app.get('/searches/new', newSearch);
+// app.put('/update/:book_id', updateBook);
 // app.get('/add', showForm); // show form to add a task
 // app.post('/add', addBook); // create a new task
 
@@ -46,16 +47,6 @@ function getOneBook(req, res) {
     .catch(err => console.error(err));
 }
 
-// function addBook(req, res) {
-//   // console.log('addBook()', req.body);
-//   let { author, title, description, isbn, image_url, bookshelf  } = req.body;
-//   let SQL = 'INSERT into books(author, title, description, isbn, image_url, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);';
-//   let values = [author, title, description, isbn, image_url, bookshelf ];
-
-//   return client.query(SQL, values)
-//     .then(res.redirect('/'))
-//     .catch(err => console.error(err));
-// }
 
 function addBook(request, response) {
 
@@ -85,6 +76,18 @@ function addBook(request, response) {
     // select * from books where isbn = request.body.isbn
       // then redirect to /books/${result.rows[0].id}
 }
+// function updateBook(request, response) {
+//   // destructure variables
+//   let { title, author, etag, image_url, description, bookshelf } = request.body;
+//   // need SQL to update the specific task that we were on
+//   let SQL = `UPDATE tasks SET title=$1, author=$2, etag=$3, image_url=$4, description=$5, bookshelf=$6 WHERE id=$7;`;
+//   // use request.params.task_id === whatever task we were on
+//   let values = [title, author, etag, image_url, description, bookshelf, request.params.book_id];
+
+//   client.query(SQL, values)
+//     .then(response.redirect(`/books/${request.params.book_id}`))
+//     .catch(err => console.error(err));
+// }
 
 let bookArr = [];
 
