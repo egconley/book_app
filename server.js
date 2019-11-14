@@ -59,12 +59,12 @@ function getOneBook(req, res) {
 
 function addBook(request, response) {
   console.log('this is the one ', request.body);
-  let { title, author, isbn, image_url, description } = request.body;
+  let { title, author, isbn, image_url, description, bookshelf } = request.body;
 
   // save book to database
-  let sql = 'INSERT INTO books (title, author, isbn, image_url, description) VALUES ($1, $2, $3, $4, $5);'
+  let sql = 'INSERT INTO books (title, author, isbn, image_url, description, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);';
 
-  let safeValues = [title, author, isbn, image_url, description];
+  let safeValues = [title, author, isbn, image_url, description, bookshelf];
 
   // select that book back from the DB with the id
   client.query(sql, safeValues)
