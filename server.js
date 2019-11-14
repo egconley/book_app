@@ -22,7 +22,7 @@ app.post('/books', addBook);
 app.post('/searches', searchHandler);
 app.get('/searches/new', newSearch);
 // app.get('/add', showForm); // show form to add a task
-app.post('/add', addBook); // create a new task
+// app.post('/add', addBook); // create a new task
 
 
 function getBooks(req, res) {
@@ -46,15 +46,40 @@ function getOneBook(req, res) {
     .catch(err => console.error(err));
 }
 
-function addBook(req, res) {
-  // console.log('addBook()', req.body);
-  let { author, title, description, isbn, image_url, bookshelf  } = req.body;
-  let SQL = 'INSERT into books(author, title, description, isbn, image_url, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);';
-  let values = [author, title, description, isbn, image_url, bookshelf ];
+// function addBook(req, res) {
+//   // console.log('addBook()', req.body);
+//   let { author, title, description, isbn, image_url, bookshelf  } = req.body;
+//   let SQL = 'INSERT into books(author, title, description, isbn, image_url, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);';
+//   let values = [author, title, description, isbn, image_url, bookshelf ];
 
-  return client.query(SQL, values)
-    .then(res.redirect('/'))
-    .catch(err => console.error(err));
+//   return client.query(SQL, values)
+//     .then(res.redirect('/'))
+//     .catch(err => console.error(err));
+// }
+
+function addBook(request, response){
+  let { title, author, isbn, image_url, description } = request.body;
+
+  // save book to database
+  let sql = 'INSERT INTO books (title, author, isbn, image_url, desciption, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);'
+
+  let safeValues = [title, author, isbn, image_url, description];
+
+  // select that book back from the DB with the id
+  client.query(sql, safeValues)
+    .then(() => {
+      sql = 'SELECT * FROM books WHERE isbn = $1;'
+      safeValues = [request.body.isbn];
+
+      client.query(sql, safeValues)
+        .then((result) => {
+          response.redirect(`/books/${result.rows[0].id}`)
+        })
+    })
+  // render the detail page of the book that was saved
+    // after we save the book to the DB
+    // select * from books where isbn = request.body.isbn
+      // then redirect to /books/${result.rows[0].id}
 }
 
 let bookArr = [];
