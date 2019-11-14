@@ -18,6 +18,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', getBooks);
 app.get('/books/:book_id', getOneBook);
+app.post('/books', addBook);
 app.post('/searches', searchHandler);
 app.get('/searches/new', newSearch);
 // app.get('/add', showForm); // show form to add a task
