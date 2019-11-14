@@ -20,6 +20,8 @@ app.get('/', getBooks);
 app.get('/books/:book_id', getOneBook);
 app.post('/searches', searchHandler);
 app.get('/searches/new', newSearch);
+// app.get('/add', showForm); // show form to add a task
+app.post('/add', addBook); // create a new task
 
 
 function getBooks(req, res) {
@@ -43,10 +45,16 @@ function getOneBook(req, res) {
     .catch(err => console.error(err));
 }
 
-// app.get('/searches', (request, res) => {
-//   console.log('!!!!!', bookArr);
-//   // res.render('searches', { arrItems: bookArr });
-// })
+function addBook(req, res) {
+  // console.log('addBook()', req.body);
+  let { author, title, description, isbn, image_url, bookshelf  } = req.body;
+  let SQL = 'INSERT into books(author, title, description, isbn, image_url, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);';
+  let values = [author, title, description, isbn, image_url, bookshelf ];
+
+  return client.query(SQL, values)
+    .then(res.redirect('/'))
+    .catch(err => console.error(err));
+}
 
 let bookArr = [];
 
