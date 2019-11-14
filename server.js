@@ -18,6 +18,8 @@ app.set('view engine', 'ejs');
 
 app.get('/', getBooks);
 app.get('/books/:book_id', getOneBook);
+app.post('/searches', searchHandler);
+app.get('/searches/new', newSearch);
 
 
 function getBooks(req, res) {
@@ -41,10 +43,6 @@ function getOneBook(req, res) {
     .catch(err => console.error(err));
 }
 
-
-
-app.post('/searches', searchHandler);
-
 // app.get('/searches', (request, res) => {
 //   console.log('!!!!!', bookArr);
 //   // res.render('searches', { arrItems: bookArr });
@@ -63,6 +61,10 @@ function Book(info) {
   // link grabbed from items.volumeInfo.imageLinks.thumbnail property.
   bookArr.push(this);
   console.log(bookArr);
+}
+
+function newSearch(req, res) {
+  res.render('pages/searches/new');
 }
 
 function searchHandler(req, res) {
