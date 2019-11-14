@@ -16,10 +16,10 @@
       <li><%= item.author %></li>
       <li><%= item.description %></li>
       <form action="/books" method="post">
-        <input name="title" value="<%= item.title %>">
-        <input name="author" value="<%= item.author %>">
-        <input name="isbn" value="<%= item.isbn %>">
-        <input name="description" value="<%= item.description %>">
+        <input name="title" value="<%= item.title %>" type="hidden">
+        <input name="author" value="<%= item.author %>" type="hidden">
+        <input name="isbn" value="<%= item.isbn %>" type="hidden">
+        <input name="description" value="<%= item.description %>" type="hidden">
       <button>add book to database</button>
     </form>
     <% }) %>
