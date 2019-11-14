@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <%- include('../../partials/head'); -%>
 </head>
+
 <body>
   <h1>Book list</h1>
   <p><a href="/">Home</a></p>
   <ul>
-    <li><% console.log(arrItems) %></li>
     <% arrItems.forEach(item => { %>
-    <img src="<%=item.image%>"/>
-    <li><%= item.title %></li>
-    <li><%= item.author %></li>
-    <li><%= item.description %></li>
+
+      <img src="<%=item.image%>" />
+      <li><%= item.title %></li>
+      <li><%= item.author %></li>
+      <li><%= item.description %></li>
+      <form action="/books" method="post">
+        <input name="title" value="<%= item.title %>">
+        <input name="author" value="<%= item.author %>">
+        <input name="isbn" value="<%= item.isbn %>">
+        <input name="description" value="<%= item.description %>">
+      <button>add book to database</button>
+    </form>
     <% }) %>
   </ul>
 </body>

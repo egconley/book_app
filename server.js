@@ -57,11 +57,12 @@ function getOneBook(req, res) {
 //     .catch(err => console.error(err));
 // }
 
-function addBook(request, response){
+function addBook(request, response) {
+  console.log('this is the one ', request.body);
   let { title, author, isbn, image_url, description } = request.body;
 
   // save book to database
-  let sql = 'INSERT INTO books (title, author, isbn, image_url, desciption, bookshelf) VALUES ($1, $2, $3, $4, $5, $6);'
+  let sql = 'INSERT INTO books (title, author, isbn, image_url, description) VALUES ($1, $2, $3, $4, $5);'
 
   let safeValues = [title, author, isbn, image_url, description];
 
@@ -73,6 +74,7 @@ function addBook(request, response){
 
       client.query(sql, safeValues)
         .then((result) => {
+          console.log('new thing ', result.rows);
           response.redirect(`/books/${result.rows[0].id}`)
         })
     })
@@ -94,7 +96,7 @@ function Book(info) {
   this.image = `https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
   // link grabbed from items.volumeInfo.imageLinks.thumbnail property.
   bookArr.push(this);
-  console.log(bookArr);
+  // console.log(bookArr);
 }
 
 function newSearch(req, res) {
@@ -117,10 +119,13 @@ function searchHandler(req, res) {
     .catch(() => {
       res.render('pages/error');
     })
-
   // how will we handle errors?
 }
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 
+// process
+/*
+
+*/
