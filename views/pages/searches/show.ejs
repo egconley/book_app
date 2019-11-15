@@ -15,6 +15,7 @@
       <h3><%= item.title %></h3>
       <p class="author"><%= item.author %></p>
       <p class="description" ><%= item.description %></p>
+      <p class="isbn" ><%= item.isbn %></p>
       <form action="/books" method="post">
         <input name="image_url" value="<%=item.image%>" type="hidden"/> 
         <input name="title" value="<%= item.title %>" type="hidden">
