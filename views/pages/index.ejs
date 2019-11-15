@@ -7,21 +7,26 @@
 
 <body>
   <header>
+    
     <h1>Best Books!</h1>
+    <%- include('../layout/nav'); -%>
   </header>
-  <h2>My Books (<%=results.length %>)</h2>
+  <h2>Saved books (<%=results.length %>)</h2>
   <ul>
     <% results.forEach(book => { %>
-    <li>
+    <li id="book">
+      <img src="<%= book.image_url %>">
       <h3><%= book.title %></h3>
-      <p>by <%= book.author %></p>
+      <p >by <%= book.author %></p>
       <p>bookshelf: <%= book.bookshelf %></p>
-      <a href="/books/<%= book.id %>">View Details</a>
+      <button class="view"><a href="/books/<%= book.id %>">View Details</a></button>
     </li>
     <% }) %>
   </ul>
+  
 
   <footer></footer>
+
 </body>
 
 </html>

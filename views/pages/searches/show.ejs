@@ -6,26 +6,27 @@
 </head>
 
 <body>
-  <h1>Book list</h1>
+  <h2>Book list</h2>
   <p><a href="/">Home</a></p>
   <ul>
     <% arrItems.forEach(item => { %>
-
+    <li id="book">
       <img src="<%=item.image%>" />
-      <li><%= item.title %></li>
-      <li><%= item.author %></li>
-      <li><%= item.description %></li>
+      <h3><%= item.title %></h3>
+      <p class="author"><%= item.author %></p>
+      <p class="description" ><%= item.description %></p>
       <form action="/books" method="post">
+        <input name="image_url" value="<%=item.image%>" type="hidden"/> 
         <input name="title" value="<%= item.title %>" type="hidden">
         <input name="author" value="<%= item.author %>" type="hidden">
         <input name="etag" value="<%= item.etag %>" type="hidden">
         <input name="description" value="<%= item.description %>" type="hidden">
         <label for="">bookshelf: <input name="bookshelf" type="text"></label>
-        
-      <button>add book to database</button>
+      <button id="save" class="view">add book to database</button>
     </form>
+    </li>
     <% }) %>
-  </ul>
+    </ul>
 </body>
 
 </html>
