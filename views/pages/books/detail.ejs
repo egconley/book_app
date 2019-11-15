@@ -10,7 +10,7 @@
   <button class="update">delete book</button>
   </div>
  <div class="form">
-  <form id="myForm" action="/update/<%- book.id %>" method="post">
+  <form id="myForm" action="<%=`/update/${book.id}`%>" method="post">
     <input type="hidden" name="_method" value="put">
     <input type="text" name="title" value="<%- book.title %>" placeholder="Title">
     <textarea name="description" placeholder="Description of the book" cols="30"

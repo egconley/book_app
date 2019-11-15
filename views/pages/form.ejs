@@ -1,0 +1,11 @@
+<h2 class="view-title"><%- 'update' === formAction ? "Update Task" : "Add A Task" %></h2>
+<form action="<%= 'update' === formAction ? `/update/${book.id}` : '/add' %>" method="post">
+  <input type="hidden" name="_method" value="<%- 'update' === formAction ? 'put' : 'post' %>">
+  <input type="text" name="title" value="<%- book.title %>" placeholder="book Name">
+  <textarea name="description" placeholder="Description of the book" cols="30"
+    rows="10"><%- book.description %></textarea>
+  <input type="text" name="category" value="<%- book.category %>" placeholder="Category">
+  <input type="text" name="contact" value="<%- book.contact %>" placeholder="Contact Person">
+  <input type="text" name="status" value="<%- book.status %>" placeholder="Completion Status">
+  <button type="submit"><%- 'update' === formAction ? "Update This book" : "Add This Task" %></button>
+</form>

@@ -10,6 +10,14 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
+app.use(methodOverride((request, response) => {
+  if (request.body && typeof request.body === 'object' && '_method' in request.body) {
+    // look in urlencoded POST bodies and delete it
+    let method = request.body._method;
+    delete request.body._method;
+    return method;
+  }
+}));
 
 const client = new pg.Client(process.env.DATABASE_URL);
 client.connect();
@@ -28,15 +36,6 @@ app.put('/update/:book_id', updateBook);
 
 
 // // Middleware to handle PUT and DELETE
-app.use(methodOverride((request, response) => {
-  if (request.body && typeof request.body === 'object' && '_method' in request.body) {
-    console.log(request);
-    // look in urlencoded POST bodies and delete it
-    let method = request.body._method;
-    delete request.body._method;
-    return method;
-  }
-}))
 
 function getBooks(req, res) {
   let SQL = 'SELECT * FROM books;';
@@ -65,8 +64,6 @@ function getOneBook(req, res) {
 
 function addBook(request, response) {
 
-  console.log('this is the one ', request.body);
-
   let { title, author, etag, image_url, description, bookshelf } = request.body;
 
   // save book to database
@@ -82,7 +79,6 @@ function addBook(request, response) {
 
       client.query(sql, safeValues)
         .then((result) => {
-          console.log('new thing ', result.rows);
           response.redirect(`/books/${result.rows[0].id}`)
         })
     })
@@ -94,14 +90,13 @@ function addBook(request, response) {
 
 
 function updateBook(request, response) {
-  console.log('update me please', request);
   // destructure variables
   let { title, author, etag, image_url, description, bookshelf } = request.body;
   // need SQL to update the specific task that we were on
   let SQL = `UPDATE books SET title=$1, author=$2, etag=$3, image_url=$4, description=$5, bookshelf=$6 WHERE id=$7;`;
   // use request.params.task_id === whatever task we were on
   let values = [title, author, etag, image_url, description, bookshelf, request.params.book_id];
-
+  console.log(values);
   client.query(SQL, values)
     .then(response.redirect(`/books/${request.params.book_id}`))
     .catch(err => console.error(err));
