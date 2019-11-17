@@ -19,7 +19,7 @@ app.use(methodOverride((request, response) => {
   }
 }));
 
-const client = new pg.Client(process.env.DATABASE_URL);
+const client = new pg.Client(process.env.DATABASE_URL); 
 client.connect();
 client.on('error', err => console.error(err));
 
@@ -30,7 +30,9 @@ app.get('/books/:book_id', getOneBook);
 app.post('/books', addBook);
 app.post('/searches', searchHandler);
 app.get('/searches/new', newSearch);
+app.delete('/delete/:book_id', deleteBook);
 app.put('/update/:book_id', updateBook);
+
 // app.get('/add', showForm); // show form to add a task
 // app.post('/add', addBook); // create a new task
 
@@ -41,7 +43,7 @@ function getBooks(req, res) {
   let SQL = 'SELECT * FROM books;';
   return client.query(SQL)
     .then(results => {
-      console.log(results);
+      // console.log(results);
       return res.render('pages/index', { results: results.rows })
     })
     .catch(() => {
@@ -82,10 +84,7 @@ function addBook(request, response) {
           response.redirect(`/books/${result.rows[0].id}`)
         })
     })
-  // render the detail page of the book that was saved
-    // after we save the book to the DB
-    // select * from books where isbn = request.body.isbn
-      // then redirect to /books/${result.rows[0].id}
+  
 }
 
 
@@ -96,11 +95,13 @@ function updateBook(request, response) {
   let SQL = `UPDATE books SET title=$1, author=$2, etag=$3, image_url=$4, description=$5, bookshelf=$6 WHERE id=$7;`;
   // use request.params.task_id === whatever task we were on
   let values = [title, author, etag, image_url, description, bookshelf, request.params.book_id];
-  console.log(values);
+  // console.log(values);
   client.query(SQL, values)
     .then(response.redirect(`/books/${request.params.book_id}`))
     .catch(err => console.error(err));
 }
+
+
 
 let bookArr = [];
 
@@ -141,10 +142,17 @@ function searchHandler(req, res) {
   // how will we handle errors?
 }
 
+function deleteBook(request, response) {
+  console.log('delete me ', request.body)
+  // console.log('delete me ', request.params.id)
+  // need SQL to update the specific task that we were on
+  let SQL = `DELETE FROM books WHERE id=$1;`;
+  let id = request.body.id;
+  client.query(SQL, [id])
+    .then(response.redirect(`/`))
+    .catch(err => console.error(err));
+}
+
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 
-// process
-/*
-
-*/
