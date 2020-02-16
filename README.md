@@ -1,5 +1,5 @@
-# book_app
-# Project Name - "book_app".
+# Book App
+# Project Name - book_app
 
 **Author**: Kateryna Shydlovska, Ellen Conley
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
